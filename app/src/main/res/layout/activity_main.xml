@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="nineinfosys.calculatetip.MainActivity"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Bill Amount(Rs):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewBill"
+            android:layout_weight="0.17"
+            android:textSize="20dp" />
+
+        <EditText
+            android:text=""
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextBill"
+            android:textSize="20dp"
+            android:layout_weight="0.85" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.11">
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPercentage"
+            android:textSize="20dp"
+            android:text="Tip Percentage(%):" />
+
+        <EditText
+            android:text=""
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextPercentage"
+            android:textSize="20dp"
+            android:layout_weight="0.76" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_weight="0.13">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewSplit"
+            android:layout_weight="0.17"
+            android:textSize="20dp"
+            android:text="Split Bill Into:" />
+
+        <EditText
+            android:text=""
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittextSplit"
+            android:textSize="20dp"
+            android:layout_weight="0.68" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="1">
+
+
+        <Button
+            android:text="Calculate"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonCalculate"
+            android:layout_weight="0.21" />
+
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonClear"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp">
+        <TextView
+            android:layout_marginTop="40dp"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTotal" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTotalBill" />
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewPersonPays" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
